@@ -4,6 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sample Web App</title>
+    
+    <!-- Content Security Policy (CSP) -->
+    <meta http-equiv="Content-Security-Policy">
+        default-src 'self';                  // Allow resources from the same origin
+        script-src 'self'                   // Allow inline scripts and scripts from same origin
+                    https://cdnjs.cloudflare.com; // Example: Allowing scripts from a CDN
+        style-src 'self'                    // Allow inline styles and styles from same origin
+                   https://fonts.googleapis.com; // Example: Allowing styles from a CDN
+        img-src 'self'                     // Allow images from the same origin
+                  data:                     // Allowing inline data images
+                  https://example.com;     // Example: Allowing images from an external domain
+        font-src 'self'                    // Allow fonts from the same origin
+                   https://fonts.gstatic.com; // Example: Allowing fonts from a CDN
+        frame-src 'self'                   // Allow frames from the same origin
+                    https://www.youtube.com; // Example: Allowing frames from YouTube
+        connect-src 'self';                // Allow connections to same origin
+
+    <!-- End of CSP -->
 </head>
 <body>
     <h1>Welcome to the Sample Web App</h1>
