@@ -5,11 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sample Web App</title>
     
-    <!-- Content Security Policy (CSP) Header -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' https://cdnjs.cloudflare.com; img-src 'self' data:;">
-
-    <!-- HTTP Strict Transport Security (HSTS) Header -->
-    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload">
+    <!-- Content Security Policy (CSP) allowing unsafe-inline scripts -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'">
 </head>
 <body>
     <h1>Welcome to the Sample Web App</h1>
