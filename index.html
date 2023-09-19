@@ -1,37 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Web App</title>
-
-    <!-- Content Security Policy (CSP) Header -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; 
-        script-src 'self'; 
-        style-src 'self'; 
-        img-src 'self' data:; 
-        font-src 'self'; 
-        frame-ancestors 'none'; 
-        form-action 'self'; 
-        base-uri 'self'; 
-        manifest-src 'self'; 
-        prefetch-src 'self'; 
-        worker-src 'self'; 
-        child-src 'self'; 
-        frame-src 'self'; 
-        object-src 'none';">
-
-    <!-- X-Frame-Options Header -->
+  <meta charset="UTF-8">
+  <title>My Web Page</title>
+  <header>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' https://example.com; style-src 'self' https://example.com;">
     <meta http-equiv="X-Frame-Options" content="DENY">
-
-    <!-- X-Content-Type-Options Header -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
-
-    <!-- Referrer-Policy Header -->
     <meta name="referrer" content="no-referrer">
+  </header>
 </head>
 <body>
-    <h1>Welcome to the Sample Web App</h1>
-    <p>This is a simple web application hosted on GitHub.</p>
+  <h1>Hello, world!</h1>
 </body>
 </html>
