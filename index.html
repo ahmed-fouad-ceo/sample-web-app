@@ -1,26 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Sample Web App</title>
-    
-    <!-- Intentionally incorrect Content Security Policy (CSP) Header -->
-    <meta http-equiv="Content-Security-Policy" content="unsafe-inline">
-    
-    <!-- HTTP Strict Transport Security (HSTS) Header -->
-    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload">
-    
-    <!-- X-Content-Type-Options Header -->
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    
-    <!-- X-Frame-Options Header -->
-    <meta http-equiv="X-Frame-Options" content="DENY">
-    
-    <!-- Set a strong referrer policy -->
-    <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>CSP Failure</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to the Sample Web App</h1>
-    <p>This is a simple web application.</p>
+  <h1>CSP Failure</h1>
+
+  <script src="https://example.com/evil.js"></script>
+
+  <img src="https://example.com/evil.png">
 </body>
 </html>
